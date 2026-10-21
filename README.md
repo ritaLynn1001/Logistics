@@ -1,16 +1,28 @@
-# React + Vite
+Logi Track – Sidebar Navigation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sidebar navigation component built with React, Tailwind CSS, React Router DOM, and React Icons.
 
-Currently, two official plugins are available:
+Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Navigation links for Users, Drivers, Packages, Settings, and Logout.
+Expandable Package submenu.
+Active route highlighting.
+Responsive layout styling with Tailwind CSS and custom CSS.
 
-## React Compiler
+React Concepts Used
+Functional Component: Sidebar
+useState: Manages submenu state.
+setIsPackageOpen: Opens and closes the Package submenu.
+Conditional Rendering: Displays the submenu based on state.
+NavLink: Handles navigation and active link styling.
+Event Handling: Toggles the submenu on click.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technologies
+React.js
+Tailwind CSS
+React Router DOM
+React Icons
+CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Installation
+npm install react-router-dom react-icons
