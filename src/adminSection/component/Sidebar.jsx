@@ -8,7 +8,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 import { IoIosLogOut } from "react-icons/io";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-import logoImg from "../assets/logo.png"; 
+import logoImg from "../../assets/logo.png"; 
 
 const Sidebar = () => {
   const [isPackageOpen, setIsPackageOpen] = useState(false);
@@ -19,19 +19,19 @@ const Sidebar = () => {
   }
 
   // Helper function to handle active state cleaner in external classes
-//   function getLinkClass(isActive){
-//     return isActive ? "sidebar-link sidebar-link-active" : "sidebar-link";
-//   }
+  function getLinkClass({isActive}){
+    return isActive ? "sidebar-link sidebar-link-active" : "sidebar-link";
+  }
 
-//   function getSubLinkClass(isActive){
-//     return isActive ? "sidebar-sublink sidebar-sublink-active" : "sidebar-sublink";
-//   }
+  function getSubLinkClass({isActive}){
+    return isActive ? "sidebar-sublink sidebar-sublink-active" : "sidebar-sublink";
+  }
 
-  const getLinkClass = ({ isActive }) =>
-    `${isActive ? "sidebar-link sidebar-link-active" : "sidebar-link"}`;
+  // const getLinkClass = ({ isActive }) =>
+  //   `${isActive ? "sidebar-link sidebar-link-active" : "sidebar-link"}`;
 
-  const getSubLinkClass = ({ isActive }) =>
-    `${isActive ? "sidebar-sublink sidebar-sublink-active" : "sidebar-sublink"}`;
+  // const getSubLinkClass = ({ isActive }) =>
+  //   `${isActive ? "sidebar-sublink sidebar-sublink-active" : "sidebar-sublink"}`;
 
   return (
     <aside className="sidebar-container">
@@ -44,14 +44,14 @@ const Sidebar = () => {
         {/* Navigation Menu */}
         <ul className="sidebar-menu">
           <li>
-            <NavLink to="/users" className={getLinkClass}>
+            <NavLink to="/admin/users" className={getLinkClass}>
               <IoMdPeople className="text-lg" />
               <span>User List</span>
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/drivers" className={getLinkClass}>
+            <NavLink to="/admin/drivers" className={getLinkClass}>
               <CiLocationArrow1 className="text-lg" />
               <span>Manage Driver</span>
             </NavLink>
@@ -77,17 +77,17 @@ const Sidebar = () => {
             {isPackageOpen && (
                 <ul className="sidebar-submenu">
                 <li>
-                    <NavLink to="/package/create" className={getSubLinkClass}>
+                    <NavLink to="/admin/package/create" className={getSubLinkClass}>
                     Create
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/package/list" className={getSubLinkClass}>
+                    <NavLink to="/admin/package/list" className={getSubLinkClass}>
                     List
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/package/manage" className={getSubLinkClass}>
+                    <NavLink to="/admin/package/manage" className={getSubLinkClass}>
                     Manage
                     </NavLink>
                 </li>
@@ -95,7 +95,7 @@ const Sidebar = () => {
             )}
         </li>
           <li>
-            <NavLink to="/settings" className={getLinkClass}>
+            <NavLink to="/admin/settings" className={getLinkClass}>
               <AiOutlineSetting className="text-lg" />
               <span>Settings</span>
             </NavLink>
@@ -105,7 +105,7 @@ const Sidebar = () => {
 
       {/* Bottom Section: Logout */}
       <div className="sidebar-footer">
-        <NavLink to="/logout" className="sidebar-logout-link">
+        <NavLink to="/admin/logout" className="sidebar-logout-link">
           <IoIosLogOut className="text-lg" />
           <span>Logout</span>
         </NavLink>

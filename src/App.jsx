@@ -1,12 +1,15 @@
+import AdminLayout from './adminSection/AdminLayout'
 import './App.css'
-import Sidebar from './adminSection/Sidebar'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter ,Routes, Route } from 'react-router-dom'
 
 function App() {
   
   return (
     <BrowserRouter>
-       <Sidebar/>
+       <Routes>
+        <Route path="/admin/*" element={<AdminLayout />} />
+
+       </Routes>
       
     </BrowserRouter>
     

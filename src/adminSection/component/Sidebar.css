@@ -6,7 +6,7 @@
 @layer components {
   /* The main sidebar container */
   .sidebar-container {
-    @apply box-border w-64 min-h-screen p-1 bg-sky-50 flex flex-col justify-between rounded-md border-sky-200  shadow-sm;
+    @apply box-border w-full min-h-screen p-1 bg-sky-50 flex flex-col justify-between rounded-md border-sky-50  shadow-sm;
   }
 
   .sidebar-logo-box {
