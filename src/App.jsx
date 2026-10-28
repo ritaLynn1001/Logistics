@@ -1,4 +1,4 @@
-import AdminLayout from './adminSection/AdminLayout'
+import AdminRoute from './adminSection/AdminRoute'
 import './App.css'
 import { BrowserRouter ,Routes, Route } from 'react-router-dom'
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
        <Routes>
-        <Route path="/admin/*" element={<AdminLayout />} />
+        <Route path="/admin/*" element={<AdminRoute />} />
 
        </Routes>
       
