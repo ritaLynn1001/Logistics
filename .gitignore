@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# backend ignore file
+server/node_modules/
+server/.env
+server/dist/
+server/src/generated/
