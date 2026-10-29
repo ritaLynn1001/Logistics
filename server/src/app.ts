@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import prisma from "./db/prismaClient";
+import rootRouter from "./routes";
 
 const app = express();
 
@@ -8,19 +8,12 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/health", (_req, res) => {
-  res.json({
+  return res.status(200).json({
     success: true,
-    message: "Backend is running",
+    message: "Secure Logistics backend is running",
   });
 });
 
-app.get("/db-health", async (_req, res) => {
-  await prisma.city.findMany();
-
-  res.json({
-    success: true,
-    message: "Database connected",
-  });
-});
+app.use("/api", rootRouter);
 
 export default app;
