@@ -9,24 +9,129 @@ export const users = [
   { id: 8, name: "Jessica Anderson", phonenumber: "+95 989012345", email: "jessica@example.com", address: "Pyin Oo Lwin, Myanmar" },
   { id: 9, name: "Daniel Thomas", phonenumber: "+95 990123456", email: "daniel@example.com", address: "Sittwe, Myanmar" },
   { id: 10, name: "Laura Martinez", phonenumber: "+95 911223344", email: "laura@example.com", address: "Myitkyina, Myanmar" },
-  { id: 11, name: "Alex Turner", phonenumber: "+95 922334455", email: "alex@example.com", address: "Hpa-An, Myanmar" },
-  { id: 12, name: "Sophia Martinez", phonenumber: "+95 933445566", email: "sophia@example.com", address: "Taungoo, Myanmar" },
-  { id: 13, name: "James Wilson", phonenumber: "+95 944556677", email: "james.w@example.com", address: "Magway, Myanmar" },
-  { id: 14, name: "Olivia Taylor", phonenumber: "+95 955667788", email: "olivia@example.com", address: "Lashio, Myanmar" },
-  { id: 15, name: "William Anderson", phonenumber: "+95 966778899", email: "william@example.com", address: "Kalaw, Myanmar" },
-  { id: 16, name: "Mia Thomas", phonenumber: "+95 977889900", email: "mia@example.com", address: "Meiktila, Myanmar" },
-  { id: 17, name: "Ethan Jackson", phonenumber: "+95 988990011", email: "ethan@example.com", address: "Myingyan, Myanmar" },
-  { id: 18, name: "Harper White", phonenumber: "+95 999001122", email: "harper@example.com", address: "Pyay, Myanmar" },
-  { id: 19, name: "Benjamin Harris", phonenumber: "+95 910111213", email: "benjamin@example.com", address: "Hinthada, Myanmar" },
-  { id: 20, name: "Charlotte Martin", phonenumber: "+95 921222324", email: "charlotte@example.com", address: "Dawei, Myanmar" },
-  { id: 21, name: "Lucas Garcia", phonenumber: "+95 932333435", email: "lucas@example.com", address: "Myeik, Myanmar" },
-  { id: 22, name: "Amelia Rodriguez", phonenumber: "+95 943444546", email: "amelia@example.com", address: "Loikaw, Myanmar" },
-  { id: 23, name: "Mason Lewis", phonenumber: "+95 954555657", email: "mason@example.com", address: "Hakha, Myanmar" },
-  { id: 24, name: "Evelyn Lee", phonenumber: "+95 965666768", email: "evelyn@example.com", address: "Kengtung, Myanmar" },
-  { id: 25, name: "Logan Walker", phonenumber: "+95 976777879", email: "logan@example.com", address: "Nyaunglebin, Myanmar" },
-  { id: 26, name: "Abigail Hall", phonenumber: "+95 987888980", email: "abigail@example.com", address: "Shwebo, Myanmar" },
-  { id: 27, name: "Alexander Allen", phonenumber: "+95 998999091", email: "alexander@example.com", address: "Monywa, Myanmar" },
-  { id: 28, name: "Ella Young", phonenumber: "+95 911998877", email: "ella@example.com", address: "Pakokku, Myanmar" },
-  { id: 29, name: "Henry King", phonenumber: "+95 922887766", email: "henry@example.com", address: "Thayet, Myanmar" },
-  { id: 30, name: "Grace Scott", phonenumber: "+95 933776655", email: "grace@example.com", address: "Maubin, Myanmar" }
+ 
 ];
+
+export const drivers = [
+  {
+    id: 1,
+    name: "Kyaw Zin Htet",
+    email: "kyawzin.htet@example.com",
+    phoneNumber: "+95 9 421 558 102",
+    townShip: "Hlaing",
+    city: "Yangon",
+    status: "active",
+    vehicleNumber: "YGN-7G-4821"
+  },
+  {
+    id: 2,
+    name: "Su Myat Noe",
+    email: "sumyat.noe@example.com",
+    phoneNumber: "+95 9 782 910 334",
+    townShip: "Chanayethazan",
+    city: "Mandalay",
+    status: "busy",
+    vehicleNumber: "MDY-4N-1905"
+  },
+  {
+    id: 3,
+    name: "Thura Aung",
+    email: "thura.aung@example.com",
+    phoneNumber: "+95 9 250 643 789",
+    townShip: "Sanchaung",
+    city: "Yangon",
+    status: "active",
+    vehicleNumber: "YGN-9K-8312"
+  },
+  {
+    id: 4,
+    name: "Hnin Wai Lwin",
+    email: "hninwai.lwin@example.com",
+    phoneNumber: "+95 9 691 204 517",
+    townShip: "Zabuthiri",
+    city: "Naypyidaw",
+    status: "busy",
+    vehicleNumber: "NPW-2D-6044"
+  },
+  {
+    id: 5,
+    name: "Min Khant Kyaw",
+    email: "minkhant.kyaw@example.com",
+    phoneNumber: "+95 9 508 712 490",
+    townShip: "Kamayut",
+    city: "Yangon",
+    status: "active",
+    vehicleNumber: "YGN-5L-3190"
+  },
+  {
+    id: 6,
+    name: "Ei Thinzar Phyo",
+    email: "eithinzar.phyo@example.com",
+    phoneNumber: "+95 9 795 331 826",
+    townShip: "Maha Aungmye",
+    city: "Mandalay",
+    status: "active",
+    vehicleNumber: "MDY-8P-7418"
+  },
+  {
+    id: 7,
+    name: "Aung Ko Ko",
+    email: "aungko.ko@example.com",
+    phoneNumber: "+95 9 440 819 653",
+    townShip: "Bahan",
+    city: "Yangon",
+    status: "busy",
+    vehicleNumber: "YGN-3R-5529"
+  },
+  {
+    id: 8,
+    name: "Nandar Win",
+    email: "nandar.win@example.com",
+    phoneNumber: "+95 9 964 127 908",
+    townShip: "Ottarathiri",
+    city: "Naypyidaw",
+    status: "active",
+    vehicleNumber: "NPW-6F-2783"
+  },
+  {
+    id: 9,
+    name: "Zwe Htet Paing",
+    email: "zwehtet.paing@example.com",
+    phoneNumber: "+95 9 261 489 731",
+    townShip: "Thingangyun",
+    city: "Yangon",
+    status: "busy",
+    vehicleNumber: "YGN-11M-9064"
+  },
+  {
+    id: 10,
+    name: "May Thu Khaing",
+    email: "maythu.khaing@example.com",
+    phoneNumber: "+95 9 773 605 148",
+    townShip: "Pyigyidagun",
+    city: "Mandalay",
+    status: "active",
+    vehicleNumber: "MDY-2S-6317"
+  },
+  {
+    id: 11,
+    name: "Kaung Myat Thu",
+    email: "kaungmyat.thu@example.com",
+    phoneNumber: "+95 9 428 951 274",
+    townShip: "Mayangone",
+    city: "Yangon",
+    status: "active",
+    vehicleNumber: "YGN-8T-4152"
+  },
+  {
+    id: 12,
+    name: "Phyo Wai Yan",
+    email: "phyowai.yan@example.com",
+    phoneNumber: "+95 9 682 374 895",
+    townShip: "Aungmyethazan",
+    city: "Mandalay",
+    status: "busy",
+    vehicleNumber: "MDY-5C-8821"
+  }
+];
+
