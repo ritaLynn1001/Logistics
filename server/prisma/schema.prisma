@@ -35,6 +35,7 @@ model Driver {
   phone        String
   vehicleNo    String       @unique
   password     String
+  profile      String?
   status       DriverStatus @default(ACTIVE)
   townshipId   Int
   createdAt    DateTime     @default(now())

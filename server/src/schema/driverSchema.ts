@@ -6,7 +6,7 @@ export const createDriverSchema = z.object({
   phone: z.string().min(7),
   vehicleNo: z.string().min(2),
   password: z.string().min(6),
-  townshipId: z.number().int().positive(),
+  townshipId: z.coerce.number().int().positive(),
 });
 
 export const updateDriverSchema = createDriverSchema.partial();
